@@ -14,6 +14,7 @@ pipeline {
     }
     stage ('Software Composition Analysis') {
       steps {
+         sh 'rm owasp*' 
          sh 'git clone https://github.com/jeremylong/DependencyCheck.git'
          sh 'unzip DependencyCheck.zip'
          sh './dependency-check/bin/dependency-check.sh --scan ./ --enableRetired -f "ALL" -o'
