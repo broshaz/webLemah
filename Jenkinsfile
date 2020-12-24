@@ -15,7 +15,7 @@ pipeline {
     stage ('Software Composition Analysis') {
       steps {
          sh 'rm -r DependencyCheck*' 
-         sh 'git clone https://github.com/jeremylong/DependencyCheck/releases/download/v6.0.3/dependency-check-6.0.3-release.zip'
+         sh 'wget https://github.com/jeremylong/DependencyCheck/releases/download/v6.0.3/dependency-check-6.0.3-release.zip'
          sh 'unzip DependencyCheck.zip'
          sh './dependency-check/bin/dependency-check.sh --scan ./ --enableRetired -f "ALL" -o'
            
