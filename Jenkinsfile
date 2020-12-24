@@ -12,7 +12,7 @@ pipeline {
             ''' 
       }
     }
-    /*
+    
     stage ('Source Composition Analysis') {
       steps {
          sh 'rm owasp* || true'
@@ -23,7 +23,7 @@ pipeline {
         
       }
     }
-    */
+    
     stage ('Build') {
       steps {
       sh 'mvn clean package'
