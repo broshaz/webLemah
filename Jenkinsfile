@@ -20,8 +20,7 @@ pipeline {
                     --enabledRetired
                     -f "ALL" 
                     --prettyPrint''',
-         dependencyCheckPublisher pattern: '**/dependency-check-report.xml'        
-      }
+               }
     }
     stage ('Build') {
       steps {
