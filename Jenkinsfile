@@ -19,7 +19,7 @@ pipeline {
                     -s "./"
                     --enabledRetired
                     -f "ALL" 
-                    --prettyPrint''', odcInstallation: 'Dependency-check'
+                    --prettyPrint''',
          dependencyCheckPublisher pattern: '**/dependency-check-report.xml'        
       }
     }
