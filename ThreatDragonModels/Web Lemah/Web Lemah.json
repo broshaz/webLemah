@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Web Lemah",
+    "owner": "Pemilik",
+    "description": "Ini adalah satu aplikasi web yang sangat lemah. Ia perlu dinilai dari segi senibina yang tidak dapat diketahui."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Rajah",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Penilai"
+  }
+}
